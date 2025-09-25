@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arte Terapia - Cuidando da Saúde Mental através da Arte</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2d5a3d;
+            --secondary: #f4e8e0;
+            --accent: #8b9a7a;
+            --neutral-light: #faf9f7;
+            --neutral-dark: #2c2c2c;
+            --cvv-blue: #1e40af;
+        }
+        
+        .font-display { font-family: 'Playfair Display', serif; }
+        .font-body { font-family: 'Inter', sans-serif; }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, var(--neutral-light) 0%, var(--secondary) 100%);
+        }
+        
+        .text-primary { color: var(--primary); }
+        .text-accent { color: var(--accent); }
+        .text-cvv { color: var(--cvv-blue); }
+        .bg-primary { background-color: var(--primary); }
+        .bg-secondary { background-color: var(--secondary); }
+        .bg-accent { background-color: var(--accent); }
+        .bg-cvv { background-color: var(--cvv-blue); }
+        
+        .section-padding { padding: 5rem 1rem; }
+        
+        @media (min-width: 768px) {
+            .section-padding { padding: 8rem 2rem; }
+        }
+    </style>
+</head>
+<body class="font-body text-neutral-dark bg-white">
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-sm border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="font-display text-2xl font-semibold text-primary">
+                    Arte Terapia 
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <!-- Updated navigation to reflect informational content -->
+                    <a href="#sobre" class="text-sm font-medium hover:text-primary transition-colors">O que é</a>
+                    <a href="#beneficios" class="text-sm font-medium hover:text-primary transition-colors">Benefícios</a>
+                    <a href="#cvv" class="text-sm font-medium hover:text-primary transition-colors">CVV</a>
+                    <a href="#ajuda" class="text-sm font-medium hover:text-primary transition-colors">Precisa de Ajuda?</a>
+                </div>
+                <button class="md:hidden">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient min-h-screen flex items-center justify-center pt-20">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <div class="max-w-4xl mx-auto">
+                <!-- Updated hero content to focus on mental health and CVV connection -->
+                <h1 class="font-display text-5xl md:text-7xl font-semibold text-primary mb-8 leading-tight">
+                    Arte como
+                    <span class="italic text-accent">Cura</span>
+                </h1>
+                <p class="text-lg md:text-xl text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
+                    Descubra como a arte terapia pode ser uma ferramenta poderosa para o cuidado da saúde mental. 
+                    Em parceria com o CVV, promovemos bem-estar emocional através da expressão criativa.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <!-- Replaced commercial buttons with informational and support buttons -->
+                    <a href="#cvv" class="bg-cvv text-white px-8 py-4 rounded-full font-medium hover:bg-opacity-90 transition-all">
+                        Fale com o CVV
+                    </a>
+                    <a href="#sobre" class="border-2 border-primary text-primary px-8 py-4 rounded-full font-medium hover:bg-primary hover:text-white transition-all">
+                        Saiba Mais
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="section-padding bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <!-- Updated content to be educational about art therapy -->
+                    <h2 class="font-display text-4xl md:text-5xl font-semibold text-primary mb-8">
+                        O que é Arte Terapia?
+                    </h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        A Arte Terapia é uma abordagem terapêutica que utiliza o processo criativo de fazer arte 
+                        para melhorar e manter a saúde física, mental e emocional das pessoas.
+                    </p>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        Através da expressão artística, é possível explorar sentimentos, reconciliar conflitos 
+                        emocionais, desenvolver autoconsciência e alcançar insights pessoais. Não é necessário 
+                        ter habilidades artísticas - o foco está no processo, não no resultado final.
+                    </p>
+                    <div class="space-y-4">
+                        <!-- Updated list to reflect therapeutic benefits -->
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-accent rounded-full"></div>
+                            <span class="text-sm font-medium text-primary">Redução do Estresse e Ansiedade</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-accent rounded-full"></div>
+                            <span class="text-sm font-medium text-primary">Melhora da Autoestima</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-accent rounded-full"></div>
+                            <span class="text-sm font-medium text-primary">Desenvolvimento Emocional</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-secondary rounded-3xl p-8 h-96 flex items-center justify-center">
+                    <div class="text-center">
+                        <div class="w-32 h-32 bg-accent rounded-full mx-auto mb-6 flex items-center justify-center">
+                            <svg class="w-16 h-16 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                        </div>
+                        <p class="text-primary font-medium">Expressão e Cura através da Arte</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="beneficios" class="section-padding bg-secondary">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-4xl md:text-5xl font-semibold text-primary mb-6">
+                    Como a Arte Terapia Ajuda
+                </h2>
+                <p class="text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                    A arte terapia oferece múltiplos benefícios para a saúde mental e emocional, 
+                    sendo uma ferramenta valiosa no cuidado integral da pessoa.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-display text-xl font-semibold text-primary mb-3">Bem-estar Emocional</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Ajuda a processar emoções difíceis e promove equilíbrio emocional
+                    </p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-display text-xl font-semibold text-primary mb-3">Autoconhecimento</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Facilita a descoberta de aspectos internos e fortalece a identidade
+                    </p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20 6h-2.18c.11-.31.18-.65.18-1a2.996 2.996 0 0 0-5.5-1.65l-.5.67-.5-.68C10.96 2.54 10.05 2 9 2 7.34 2 6 3.34 6 5c0 .35.07.69.18 1H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-5-2c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zM9 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-display text-xl font-semibold text-primary mb-3">Comunicação</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Oferece formas alternativas de expressar sentimentos e pensamentos
+                    </p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="w-20 h-20 bg-white rounded-full flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-10 h-10 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-display text-xl font-semibold text-primary mb-3">Resiliência</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">
+                        Desenvolve capacidade de enfrentar desafios e superar dificuldades
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CVV Section -->
+    <!-- Added new section about CVV partnership -->
+    <section id="cvv" class="section-padding bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="font-display text-4xl md:text-5xl font-semibold text-cvv mb-8">
+                        Parceria com o CVV
+                    </h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        O Centro de Valorização da Vida (CVV) é uma associação civil sem fins lucrativos, 
+                        filantrópica, que presta serviço voluntário e gratuito de apoio emocional e prevenção 
+                        do suicídio para todas as pessoas que querem e precisam conversar.
+                    </p>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        A arte terapia complementa o trabalho do CVV oferecendo uma forma alternativa de 
+                        expressão e processamento emocional, especialmente útil para pessoas que têm 
+                        dificuldade em verbalizar seus sentimentos.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-cvv rounded-full"></div>
+                            <span class="text-sm font-medium text-cvv">Apoio Emocional 24h</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-cvv rounded-full"></div>
+                            <span class="text-sm font-medium text-cvv">Prevenção ao Suicídio</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-cvv rounded-full"></div>
+                            <span class="text-sm font-medium text-cvv">Valorização da Vida</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-blue-50 rounded-3xl p-8">
+                    <div class="text-center">
+                        <div class="w-32 h-32 bg-cvv rounded-full mx-auto mb-6 flex items-center justify-center">
+                            <svg class="w-16 h-16 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                            </svg>
+                        </div>
+                        <h3 class="font-display text-2xl font-semibold text-cvv mb-4">CVV - 188</h3>
+                        <p class="text-gray-600 mb-6">Ligue gratuitamente, 24 horas por dia</p>
+                        <a href="tel:188" class="bg-cvv text-white px-8 py-3 rounded-full font-medium hover:bg-opacity-90 transition-all inline-block">
+                            Ligar Agora
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Help Section -->
+    <!-- Replaced contact form with help resources -->
+    <section id="ajuda" class="section-padding bg-secondary">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-4xl md:text-5xl font-semibold text-primary mb-6">
+                    Precisa de Ajuda?
+                </h2>
+                <p class="text-gray-600 leading-relaxed max-w-2xl mx-auto">
+                    Se você ou alguém que conhece está passando por um momento difícil, 
+                    saiba que não está sozinho. Existem pessoas dispostas a ajudar.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl p-8 text-center hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-cvv rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-display text-2xl font-semibold text-cvv mb-4">Ligue 188</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Atendimento gratuito 24 horas por dia, todos os dias da semana
+                    </p>
+                    <a href="tel:188" class="bg-cvv text-white px-6 py-3 rounded-full font-medium hover:bg-opacity-90 transition-all">
+                        Ligar
+                    </a>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-8 text-center hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-primary rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-display text-2xl font-semibold text-primary mb-4">Chat Online</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Converse por chat no site do CVV de forma anônima e segura
+                    </p>
+                    <a href="https://www.cvv.org.br" target="_blank" class="bg-primary text-white px-6 py-3 rounded-full font-medium hover:bg-opacity-90 transition-all">
+                        Acessar
+                    </a>
+                </div>
+                
+                <div class="bg-white rounded-2xl p-8 text-center hover:shadow-lg transition-shadow">
+                    <div class="w-16 h-16 bg-accent rounded-2xl flex items-center justify-center mx-auto mb-6">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <h3 class="font-display text-2xl font-semibold text-accent mb-4">Arte como Terapia</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Experimente desenhar, pintar ou criar como forma de expressar seus sentimentos
+                    </p>
+                    
+                    <button class="bg-accent text-white px-6 py-3 rounded-full font-medium hover:bg-opacity-90 transition-all">
+                      <a href="https://play.google.com/store/apps/details?id=com.pixel.art.coloring.color.number">  Começar</a>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="mt-16 text-center">
+                <div class="bg-yellow-50 border border-yellow-200 rounded-2xl p-8 max-w-4xl mx-auto">
+                    <h3 class="font-display text-2xl font-semibold text-yellow-800 mb-4">
+                        Sinais de Alerta
+                    </h3>
+                    <p class="text-yellow-700 mb-6 leading-relaxed">
+                        Se você ou alguém próximo apresenta estes sinais, procure ajuda imediatamente:
+                    </p>
+                    <div class="grid md:grid-cols-2 gap-4 text-left">
+                        <ul class="space-y-2 text-yellow-700">
+                            <li>• Falar sobre morte ou suicídio</li>
+                            <li>• Isolamento social extremo</li>
+                            <li>• Mudanças bruscas de humor</li>
+                        </ul>
+                        <ul class="space-y-2 text-yellow-700">
+                            <li>• Perda de interesse em atividades</li>
+                            <li>• Sentimentos de desesperança</li>
+                            <li>• Comportamentos de risco</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-12">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <!-- Updated footer content to reflect new purpose -->
+                    <div class="font-display text-3xl font-semibold mb-4">Arte Terapia </div>
+                    <p class="text-gray-300 leading-relaxed mb-6">
+                        Promovendo saúde mental e prevenção ao suicídio através da arte e do apoio emocional.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.cvv.org.br" target="_blank" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-white/20 transition-colors">
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Recursos</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><a href="#sobre" class="hover:text-white transition-colors">O que é Arte Terapia</a></li>
+                        <li><a href="#beneficios" class="hover:text-white transition-colors">Benefícios</a></li>
+                        <li><a href="#cvv" class="hover:text-white transition-colors">Sobre o CVV</a></li>
+                        <li><a href="#ajuda" class="hover:text-white transition-colors">Precisa de Ajuda?</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-semibold mb-4">Emergência</h4>
+                    <ul class="space-y-2 text-gray-300">
+                        <li><strong class="text-white">CVV: 188</strong></li>
+                        <li><strong class="text-white">SAMU: 192</strong></li>
+                        <li><strong class="text-white">Bombeiros: 193</strong></li>
+                        <li><a href="https://www.cvv.org.br" target="_blank" class="hover:text-white transition-colors">www.cvv.org.br</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-white/10 mt-12 pt-8 text-center text-gray-300">
+                <p>&copy; 2025 Arte Terapia. Promovendo vida e bem-estar.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
