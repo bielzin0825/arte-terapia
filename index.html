@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arte Terapia - Cuidando da Saúde Mental através da Arte</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary: #6CA6C1;      /* Azul Serenity */
+            --secondary: #9BBF9B;    /* Verde Sage */
+            --accent: #E58E73;       /* Rosa Coral */
+            --neutral-light: #F6F5F3;/* Cinza Areia */
+            --neutral-dark: #333333; /* Cinza Chumbo */
+            --cvv-blue: #47C2A8;     /* Verde Água */
+        }
+
+        .font-display { font-family: 'Playfair Display', serif; }
+        .font-body { font-family: 'Inter', sans-serif; }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+        }
+
+        .text-primary { color: var(--primary); }
+        .text-accent { color: var(--accent); }
+        .text-cvv { color: var(--cvv-blue); }
+        .bg-primary { background-color: var(--primary); }
+        .bg-secondary { background-color: var(--secondary); }
+        .bg-accent { background-color: var(--accent); }
+        .bg-cvv { background-color: var(--cvv-blue); }
+
+        .section-padding { padding: 5rem 1rem; }
+
+        @media (min-width: 768px) {
+            .section-padding { padding: 8rem 2rem; }
+        }
+
+        body {
+            background-color: var(--neutral-light);
+            color: var(--neutral-dark);
+        }
+
+        /* ✨ EFEITOS DE BOTÕES */
+        button, a.btn-effect {
+            transition: all 0.3s ease;
+            transform: scale(1);
+        }
+
+        button:hover, a.btn-effect:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+            opacity: 0.95;
+        }
+
+        button:active, a.btn-effect:active {
+            transform: scale(0.97);
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            opacity: 0.9;
+        }
+
+        a.btn-outline {
+            border: 2px solid var(--primary);
+            color: var(--primary);
+            transition: all 0.3s ease;
+        }
+
+        a.btn-outline:hover {
+            background-color: var(--primary);
+            color: white;
+        }
+    </style>
+</head>
+
+<body class="font-body text-neutral-dark bg-neutral-light">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-sm border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="font-display text-2xl font-semibold text-primary">
+                    ArteTerapia 
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#sobre" class="text-sm font-medium hover:text-primary transition-colors">O que é</a>
+                    <a href="#beneficios" class="text-sm font-medium hover:text-primary transition-colors">Benefícios</a>
+                    <a href="#cvv" class="text-sm font-medium hover:text-primary transition-colors">CVV</a>
+                    <a href="#ajuda" class="text-sm font-medium hover:text-primary transition-colors">Precisa de Ajuda?</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient min-h-screen flex items-center justify-center pt-20 text-white">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="font-display text-5xl md:text-7xl font-semibold mb-8 leading-tight">
+                    Arte como <span class="italic text-accent">Cura</span>
+                </h1>
+                <p class="text-lg md:text-xl mb-12 max-w-2xl mx-auto leading-relaxed text-neutral-light">
+                    Descubra como a arte terapia pode ser uma ferramenta poderosa para o cuidado da saúde mental. 
+                    Em parceria com o CVV, promovemos bem-estar emocional através da expressão criativa.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#cvv" class="bg-cvv text-white px-8 py-4 rounded-full font-medium btn-effect">
+                        Fale com o CVV
+                    </a>
+                    <a href="#sobre" class="btn-outline px-8 py-4 rounded-full font-medium btn-effect">
+                        Saiba Mais
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="section-padding bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div>
+                    <h2 class="font-display text-4xl md:text-5xl font-semibold text-primary mb-8">
+                        O que é Arte Terapia?
+                    </h2>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        A Arte Terapia é uma abordagem terapêutica que utiliza o processo criativo de fazer arte 
+                        para melhorar e manter a saúde física, mental e emocional das pessoas.
+                    </p>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        Através da expressão artística, é possível explorar sentimentos, reconciliar conflitos 
+                        emocionais, desenvolver autoconsciência e alcançar insights pessoais. 
+                        Não é necessário ter habilidades artísticas — o foco está no processo, não no resultado final.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-accent rounded-full"></div>
+                            <span class="text-sm font-medium text-primary">Redução do Estresse e Ansiedade</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-accent rounded-full"></div>
+                            <span class="text-sm font-medium text-primary">Melhora da Autoestima</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-2 h-2 bg-accent rounded-full"></div>
+                            <span class="text-sm font-medium text-primary">Desenvolvimento Emocional</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-secondary rounded-3xl p-8 h-96 flex items-center justify-center">
+                    <div class="text-center">
+                        <div class="w-32 h-32 bg-accent rounded-full mx-auto mb-6 flex items-center justify-center">
+                            <svg class="w-16 h-16 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                        </div>
+                        <p class="text-white font-medium">Expressão e Cura através da Arte</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="beneficios" class="section-padding bg-secondary text-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-4xl md:text-5xl font-semibold mb-6 text-white">
+                    Como a Arte Terapia Ajuda
+                </h2>
+                <p class="text-neutral-light max-w-2xl mx-auto leading-relaxed">
+                    A arte terapia oferece múltiplos benefícios para a saúde mental e emocional, 
+                    sendo uma ferramenta valiosa no cuidado integral da pessoa.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center bg-white/10 rounded-2xl p-6">
+                    <h3 class="font-display text-xl font-semibold text-neutral-light mb-3">Bem-estar Emocional</h3>
+                    <p class="text-white/80 text-sm leading-relaxed">Ajuda a processar emoções difíceis e promove equilíbrio emocional.</p>
+                </div>
+                <div class="text-center bg-white/10 rounded-2xl p-6">
+                    <h3 class="font-display text-xl font-semibold text-neutral-light mb-3">Autoconhecimento</h3>
+                    <p class="text-white/80 text-sm leading-relaxed">Facilita a descoberta de aspectos internos e fortalece a identidade.</p>
+                </div>
+                <div class="text-center bg-white/10 rounded-2xl p-6">
+                    <h3 class="font-display text-xl font-semibold text-neutral-light mb-3">Comunicação</h3>
+                    <p class="text-white/80 text-sm leading-relaxed">Oferece formas alternativas de expressar sentimentos e pensamentos.</p>
+                </div>
+                <div class="text-center bg-white/10 rounded-2xl p-6">
+                    <h3 class="font-display text-xl font-semibold text-neutral-light mb-3">Resiliência</h3>
+                    <p class="text-white/80 text-sm leading-relaxed">Desenvolve capacidade de enfrentar desafios e superar dificuldades.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CVV Section -->
+    <section id="cvv" class="section-padding bg-white">
+        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="font-display text-4xl md:text-5xl font-semibold text-cvv mb-8">
+                    Parceria com o CVV
+                </h2>
+                <p class="text-gray-600 mb-6 leading-relaxed">
+                    O Centro de Valorização da Vida (CVV) é uma associação sem fins lucrativos que presta 
+                    serviço voluntário e gratuito de apoio emocional e prevenção do suicídio para todas as pessoas.
+                </p>
+                <p class="text-gray-600 mb-8 leading-relaxed">
+                    A arte terapia complementa o trabalho do CVV oferecendo uma forma alternativa de expressão 
+                    e processamento emocional, especialmente útil para pessoas que têm dificuldade em verbalizar 
+                    seus sentimentos.
+                </p>
+                <ul class="space-y-2 text-cvv">
+                    <li>• Apoio Emocional 24h</li>
+                    <li>• Prevenção ao Suicídio</li>
+                    <li>• Valorização da Vida</li>
+                </ul>
+            </div>
+            <div class="bg-blue-50 rounded-3xl p-8 text-center">
+                <div class="w-32 h-32 bg-cvv rounded-full mx-auto mb-6 flex items-center justify-center">
+                    <svg class="w-16 h-16 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                    </svg>
+                </div>
+                <h3 class="font-display text-2xl font-semibold text-cvv mb-4">CVV - 188</h3>
+                <p class="text-gray-600 mb-6">Ligue gratuitamente, 24 horas por dia</p>
+                <a href="tel:188" class="bg-cvv text-white px-8 py-3 rounded-full font-medium btn-effect inline-block">
+                    Ligar Agora
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Help Section -->
+    <section id="ajuda" class="section-padding bg-secondary">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="font-display text-4xl md:text-5xl font-semibold text-white mb-6">
+                    Precisa de Ajuda?
+                </h2>
+                <p class="text-neutral-light leading-relaxed max-w-2xl mx-auto">
+                    Se você ou alguém que conhece está passando por um momento difícil, 
+                    saiba que não está sozinho. Existem pessoas dispostas a ajudar.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-2xl p-8 text-center hover:shadow-lg transition-shadow">
+                    <h3 class="font-display text-2xl font-semibold text-cvv mb-4">Ligue 188</h3>
+                    <p class="text-gray-600 mb-6">Atendimento gratuito 24 horas por dia</p>
+                    <a href="tel:188" class="bg-cvv text-white px-6 py-3 rounded-full font-medium btn-effect">Ligar</a>
+                </div>
+                <div class="bg-white rounded-2xl p-8 text-center hover:shadow-lg transition-shadow">
+                    <h3 class="font-display text-2xl font-semibold text-primary mb-4">Chat Online</h3>
+                    <p class="text-gray-600 mb-6">Converse de forma anônima e segura no site do CVV</p>
+                    <a href="https://www.cvv.org.br" target="_blank" class="bg-primary text-white px-6 py-3 rounded-full font-medium btn-effect">Acessar</a>
+                </div>
+                <div class="bg-white rounded-2xl p-8 text-center hover:shadow-lg transition-shadow">
+                    <h3 class="font-display text-2xl font-semibold text-accent mb-4">Arte como Terapia</h3>
+                    <p class="text-gray-600 mb-6">Desenhe, pinte ou crie como forma de expressar sentimentos</p>
+                    <a href="https://play.google.com/store/apps/details?id=com.pixel.art.coloring.color.number" target="_blank" class="bg-accent text-white px-6 py-3 rounded-full font-medium btn-effect">Começar</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-12">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <p>&copy; 2025 Arte Terapia. Promovendo vida e bem-estar.</p>
+        </div>
+    </footer>
+</body>
+</html>
